@@ -82,6 +82,8 @@
 }
 
 .sc-info {
+  opacity: 0;
+  pointer-events: none;
   width: 530px;
   position: absolute;
   bottom: 44px;
@@ -116,7 +118,7 @@
   content: "";
   display: block;
   width: 40px;
-  height: 20px;
+  height: 16px;
   clip-path: polygon(100% 0, 0 0, 50% 100%);
   background-color: #fafafa;
 }
@@ -125,16 +127,21 @@
   position: relative;
   display: inline-block;
 }
+.sc-buble:hover .sc-info {
+  opacity: 1;
+  pointer-events: all;
+}
 
 .sc-term {
   color: #05909a;
   position: relative;
+  padding-top: 20px;
 }
 .sc-term::after {
   content: "";
   position: absolute;
   right: -3px;
-  top: -7px;
+  bottom: 17px;
   background-image: url("../images/info-round.svg");
   width: 9px;
   height: 9px;
