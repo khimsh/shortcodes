@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "BPG Mrgvlovani 2010";
+  src: url("../fonts/BPGMrgvlovani2010.woff2") format("woff2"), url("../fonts/BPGMrgvlovani2010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "BPG Mrgvlovani Caps 2010";
+  src: url("../fonts/BPGMrgvlovaniCaps2010.woff2") format("woff2"), url("../fonts/BPGMrgvlovaniCaps2010.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+.shortcode {
+  position: relative;
+  font-family: "BPG Mrgvlovani 2010", sans-serif;
+  width: 100%;
+  max-width: 1155px;
+  line-height: 1.6;
+}
+.shortcode > *:is(h1, h2, h3, h4) {
+  font-family: "BPG Mrgvlovani Caps 2010", sans-serif;
+  text-transform: uppercase;
+}
+.shortcode p {
+  font-size: 14px;
+}
+
+.sc-w-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sc-sm {
+  line-height: 20px;
+}
+.sc-sm p {
+  font-size: 12px;
+}
+
+.sc-border-bottom {
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.sc-padding {
+  padding: 30px;
+}
+
+.sc-icon-left .sc-icon {
+  margin-right: 20px;
+}
+
+.sc-icon-right .sc-icon {
+  margin-left: 20px;
+}
+
+.sc-icon svg,
+.sc-icon img {
+  display: block;
+}
+
+.sc-title {
+  margin-bottom: 13px;
+  font-size: 18px;
+  color: #05909a;
+  font-weight: 400;
+}
+
+.sc-author {
+  font-family: "BPG Mrgvlovani Caps 2010", sans-serif;
+  text-align: right;
+  color: #05909a;
+  text-transform: uppercase;
+}
+.sc-author a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sc-info {
+  width: 530px;
+  position: absolute;
+  bottom: 44px;
+  right: 10px;
+  padding: 18px;
+  padding-left: 46px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+.sc-info p {
+  font-size: 10px;
+  line-height: 20px;
+}
+.sc-info::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 21px;
+  width: 5.62px;
+  height: 20.46px;
+  background-image: url("../images/info.svg");
+}
+.sc-info .sc-triangle {
+  filter: drop-shadow(0 6px 4px rgba(0, 0, 0, 0.16));
+  position: absolute;
+  bottom: -20px;
+  right: 40px;
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+}
+.sc-info .sc-triangle::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 20px;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  background-color: #fafafa;
+}
+
+.sc-buble {
+  position: relative;
+  display: inline-block;
+}
+
+.sc-term {
+  color: #05909a;
+  position: relative;
+}
+.sc-term::after {
+  content: "";
+  position: absolute;
+  right: -3px;
+  top: -7px;
+  background-image: url("../images/info-round.svg");
+  width: 9px;
+  height: 9px;
+}
+
+/*# sourceMappingURL=shortcodes.css.map */
